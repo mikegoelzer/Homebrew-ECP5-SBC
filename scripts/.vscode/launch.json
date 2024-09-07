@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug import-kicad-part.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/import-kicad-part.py",
+            "args": [
+                "-p",
+                "../parts",
+                "-f",
+                "~/Downloads/LIB_SLLB120200.zip",
+                "../hardware/psu"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Debug import-kicad-part.py (--help)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/import-kicad-part.py",
+            "args": [
+                "--help"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
