@@ -5,3 +5,7 @@
 **/*.kicad_prl
 **/fp-info-cache
 **/*.lck
+
+# Excel temporary files
+~$*.xls
+~$*.xlsx
