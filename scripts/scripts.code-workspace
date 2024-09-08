@@ -18,10 +18,11 @@
 					"../parts",
 					"-f",
 					"~/Downloads/LIB_SLLB120200.zip",
-					"hardware/psu"
+					"../hardware/psu"
 				],
 				"console": "integratedTerminal",
-				"justMyCode": true
+				"justMyCode": true,
+				"cwd": "${workspaceFolder}/scripts"
 			},
 			{
 				"name": "Debug import-kicad-part.py (--help)",
@@ -32,7 +33,8 @@
 					"--help"
 				],
 				"console": "integratedTerminal",
-				"justMyCode": false
+				"justMyCode": false,
+				"cwd": "${workspaceFolder}/scripts"
 			},
 			{
 				"name": "Debug wurth-led-calculate.py",
