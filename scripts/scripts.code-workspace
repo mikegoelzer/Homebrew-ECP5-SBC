@@ -44,6 +44,19 @@
 				"args": [],
 				"console": "integratedTerminal",
 				"justMyCode": false
+			},
+			{
+				"name": "Debug kicad_sym_edit.py",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${workspaceFolder}/scripts/kicad_sym_edit.py",
+				"args": [
+					"-d",
+					"../hardware/parts/PJ_102AH/PJ-102AH.kicad_sym"
+				],
+				"console": "integratedTerminal",
+				"justMyCode": false,
+				"cwd": "${workspaceFolder}/scripts"
 			}
 		]
 	}
