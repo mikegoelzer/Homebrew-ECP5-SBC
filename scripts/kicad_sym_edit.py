@@ -67,12 +67,28 @@ def parse_kicad_sym(file_content):
                 return Node(name, node_start, i, whitespace_prefix, whitespace_unit, attributes, children), i + 1
             else:
                 # Parse attribute
-                attr_match = re.search(r'[^\s()]+', file_content[i:])
-                if attr_match:
-                    attributes.append(attr_match.group())
-                    i += attr_match.end()
+                if file_content[i] == '"':
+                    # Quoted attribute value
+                    attr_match = re.search(r'"([^"\\]*(?:\\.[^"\\]*)*)"', file_content[i:])
+                    if attr_match:
+                        attributes.append('"' + attr_match.group(1) + '"')
+                        i += attr_match.end()
+                    else:
+                        # Unclosed quote, treat as plain text
+                        attr_match = re.search(r'[^\s()]+', file_content[i:])
+                        if attr_match:
+                            attributes.append(attr_match.group())
+                            i += attr_match.end()
+                        else:
+                            i += 1
                 else:
-                    i += 1
+                    # Unquoted attribute value
+                    attr_match = re.search(r'[^\s()]+', file_content[i:])
+                    if attr_match:
+                        attributes.append(attr_match.group())
+                        i += attr_match.end()
+                    else:
+                        i += 1
 
         return None, i
 
