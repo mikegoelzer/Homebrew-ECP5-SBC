@@ -9,7 +9,7 @@
 		"version": "0.2.0",
 		"configurations": [
 			{
-				"name": "Debug import-kicad-part.py",
+				"name": "Debug import-kicad-part.py (-f part)",
 				"type": "debugpy",
 				"request": "launch",
 				"program": "${workspaceFolder}/scripts/import-kicad-part.py",
@@ -17,7 +17,7 @@
 					"-p",
 					"../parts",
 					"-f",
-					"~/Downloads/LIB_SLLB120200.zip",
+					"~/Downloads/M20_9980345.zip",
 					"../hardware/psu"
 				],
 				"console": "integratedTerminal",

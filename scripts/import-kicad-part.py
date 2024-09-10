@@ -19,10 +19,12 @@ CWD_CONFIG_FILE_NAME = 'import-kicad-part.ini'
 # Functions to modify files within the downloaded zip
 #
 
-def update_kicad_sym(kicad_sym_filename):
+def update_kicad_sym(kicad_sym_filename, part_number=None, footprint_name=None):
     """
     Modifies a <part_number>.kicad_sym file to fix the footprint property
     (e.g., "SLLB120200" -> "SLLB120200:SLLB120200")
+    First part is `part_number` if non-empty, otherwise part number found in kicad_sym file is used.
+    Second part is `footprint_name` if non-empty, otherwise symbol name found in kicad_sym file is used.
     """
     with open(kicad_sym_filename, 'r') as file:
         content = file.read()
@@ -35,7 +37,19 @@ def update_kicad_sym(kicad_sym_filename):
     def get_symbol_name(content):
         symbol_match = re.search(r'\(symbol\s+"([^"]+)"', content)
         symbol_name = symbol_match.group(1) if symbol_match else None
+        if symbol_name is None:
+            print(f"❌ {COLOR_RED}error: symbol name not found in {COLOR_BOLD}{kicad_sym_filename}{COLOR_RESET}")
+            raise Exception(f"symbol name not found in {kicad_sym_filename}")
+
         return symbol_name
+    
+    # get the right part number andfootprint name to use
+    if footprint_name is None:
+        footprint_name = get_symbol_name(content)
+        print(f"⛔️ Warning: no footprint name provided, guessing based on symbol name: {footprint_name}")
+    if part_number is None:
+        part_number = get_symbol_name(content)
+        print(f"⛔️ Warning: no part_number provided, guessing based on symbol name: {part_number}")
 
     # find the Footprint property and update its value if not already in the correct format
     pattern = r'(property "Footprint" ")([^":]+)(?::([^"]+))?(")'
@@ -43,11 +57,15 @@ def update_kicad_sym(kicad_sym_filename):
         footprint = m.group(2)
         if m.group(3) == footprint:  # already in the correct format
             return m.group(0)
-        symbol_name = get_symbol_name(content)
-        if symbol_name is None:
-            print(f"❌ {COLOR_RED}error: symbol name not found in {COLOR_BOLD}{kicad_sym_filename}{COLOR_RESET}")
-            raise Exception(f"symbol name not found in {kicad_sym_filename}")
-        return f'{m.group(1)}{symbol_name}:{footprint}{m.group(4)}'
+        else:
+            if part_number is None:
+                print(f"❌ {COLOR_RED}error: part number not found in {COLOR_BOLD}{kicad_sym_filename}{COLOR_RESET}")
+                raise Exception(f"part number not found in {kicad_sym_filename}")
+            elif footprint_name is None:
+                print(f"❌ {COLOR_RED}error: footprint name not found in {COLOR_BOLD}{kicad_sym_filename}{COLOR_RESET} by name of our strategies")
+                raise Exception(f"footprint name not found in {kicad_sym_filename}")
+            else:
+                return f'{m.group(1)}{part_number}:{footprint_name}{m.group(4)}'
     updated_content, num_subs = re.subn(pattern, replacement, content)
 
     # write the updated content back to the file
@@ -82,6 +100,10 @@ def update_3d_model_path(kicad_mod_filename, parts_dir_rel_to_project_dir, part_
     # pattern to match the 3D model filename or path
     pattern = r'(\(model\s+)("?)([^"\s]+\.(?:stp|step))("?)'
     
+    # try to find the pattern in content, returning false if not found
+    def has_3d_model(content):
+        return re.search(pattern, content) is not None
+
     def replacement(m):
         model_path = m.group(3)
         if '${KIPRJMOD}' in model_path:
@@ -89,19 +111,49 @@ def update_3d_model_path(kicad_mod_filename, parts_dir_rel_to_project_dir, part_
         new_path = f'${{KIPRJMOD}}/{parts_dir_rel_to_project_dir}/{part_dir_name}/{step_file_sub_path}'
         return f'{m.group(1)}"{new_path}"'
 
-    updated_content, num_subs = re.subn(pattern, replacement, content)
+    def insert_new_model_block(content):
+        # Create the new model block
+        new_model_block = f'''{"\t"}(model "${{KIPRJMOD}}/{parts_dir_rel_to_project_dir}/{part_dir_name}/{step_file_sub_path}"
+{"\t"}{"\t"}(offset (xyz 0 0 0))
+{"\t"}{"\t"}(scale (xyz 1 1 1))
+{"\t"}{"\t"}(rotate (xyz 0 0 0))
+{"\t"})'''
 
-    if num_subs > 0:
-        with open(kicad_mod_filename, 'w') as file:
-            file.write(updated_content)
-        new_path_match = re.search(pattern, updated_content)
-        if new_path_match:
-            new_path = new_path_match.group(3)
-            print(f"✅ Updated 3D model path in {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} to '{COLOR_GREEN}{new_path}{COLOR_RESET}'")
+        # Find the last closing parenthesis
+        last_paren_index = content.rfind(')')
+        if last_paren_index == -1:
+            print("❌ error: failed to find closing parentheses in .kicad_mod file")
+            return None  # No closing parenthesis found, return original content
         else:
-            print(f"🚫 No changes made to {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} (3D model path already correct)")
+            # Insert the new model block before the last closing parenthesis
+            print(f"ℹ️ No preexisting model block found, so added new one to {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET}")
+            return content[:last_paren_index] + new_model_block + '\n' + content[last_paren_index:]
+
+    if not has_3d_model(content):
+        # need to create a new "model" block from scratch
+        updated_content = insert_new_model_block(content)
+
+        # Write the updated content back to the file
+        if updated_content is not None:
+            with open(kicad_mod_filename, 'w') as file:
+                file.write(updated_content)
+
+            print(f"✅ Added 3D model block to {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} with path '{COLOR_GREEN}${{KIPRJMOD}}/{parts_dir_rel_to_project_dir}/{part_dir_name}/{step_file_sub_path}{COLOR_RESET}'")
     else:
-        print(f"❌ {COLOR_RED}error: no changes made to{COLOR_RESET} {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} {COLOR_RED}(3D model not found){COLOR_RESET}")
+        # just need to fix the path
+        updated_content, num_subs = re.subn(pattern, replacement, content)
+
+        if num_subs > 0:
+            with open(kicad_mod_filename, 'w') as file:
+                file.write(updated_content)
+            new_path_match = re.search(pattern, updated_content)
+            if new_path_match:
+                new_path = new_path_match.group(3)
+                print(f"✅ Updated 3D model path in {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} to '{COLOR_GREEN}{new_path}{COLOR_RESET}'")
+            else:
+                print(f"🚫 No changes made to {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} (3D model path already correct)")
+        else:
+            print(f"❌ {COLOR_RED}error: no changes made to{COLOR_RESET} {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} {COLOR_RED}(3D model not found){COLOR_RESET}")
 
 #
 # Functions for unzipping and finding the KiCad files
@@ -403,12 +455,15 @@ def main():
     print()
 
     # Update the .kicad_sym file
-    kicad_sym_filename = os.path.join(unzipped_dir, kicad_sym_file)
-    update_kicad_sym(kicad_sym_filename)
+    kicad_sym_path = os.path.join(unzipped_dir, kicad_sym_file)
+    def remove_extension(filename):
+        return os.path.splitext(filename)[0]
+    footprint_name = remove_extension(kicad_mod_file)
+    update_kicad_sym(kicad_sym_path, part_number=part_number, footprint_name=footprint_name)
 
     # Update the .kicad_mod file
-    kicad_mod_filename = os.path.join(unzipped_dir, kicad_mod_file)
-    update_3d_model_path(kicad_mod_filename, parts_dir_rel_to_proj, part_number, step_file)
+    kicad_mod_path = os.path.join(unzipped_dir, kicad_mod_file)
+    update_3d_model_path(kicad_mod_path, parts_dir_rel_to_proj, part_number, step_file)
 
     # Add the part to the sym-lib-table
     add_sym_lib_entry(proj_dir, 'sym-lib-table', parts_dir_rel_to_proj, part_number, kicad_sym_file)
