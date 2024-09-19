@@ -156,15 +156,36 @@ def update_3d_model_path(kicad_mod_filename, parts_dir_rel_to_project_dir, part_
             print(f"❌ {COLOR_RED}error: no changes made to{COLOR_RESET} {COLOR_BOLD}{kicad_mod_filename}{COLOR_RESET} {COLOR_RED}(3D model not found){COLOR_RESET}")
 
 #
-# Functions for unzipping and finding the KiCad files
+# Functions for unzipping file or copying dir and finding the KiCad files
 #
+def copy_part_dir(src_dir, parts_dir, force_overwrite=False):
+    import shutil
 
-def get_part_number_from_zip_name(zip_file):
+    # get the part number from the src_dir name
+    part_number = get_part_number_from_zip_or_dir_name(src_dir)
+    
+    # Create the full path for the new directory
+    dest_dir = os.path.join(parts_dir, part_number)
+
+    # Check if the directory already exists and act accordingly
+    if os.path.exists(dest_dir):
+        if force_overwrite:
+            print(f"🗑️ Removing existing directory: {dest_dir}")
+            shutil.rmtree(dest_dir)
+        else:
+            print(f"🚫 {COLOR_RED}Directory already exists: {COLOR_BOLD}{dest_dir}{COLOR_RESET}\n{COLOR_RED}Use -f to overwrite{COLOR_RESET}")
+            return None, None
+    
+    # Copy the directory
+    shutil.copytree(src_dir, dest_dir)
+    return dest_dir, part_number
+
+def get_part_number_from_zip_or_dir_name(zip_or_dir_file):
     """
     Get the part number from the zip file name
     """
-    # Get the name of the zip file without the .zip extension
-    zip_name = os.path.splitext(os.path.basename(zip_file))[0]
+    # Get the name without the .zip extension (if any)
+    zip_name = os.path.splitext(os.path.basename(zip_or_dir_file))[0]
 
     # Process the zip_name to remove 'LIB_' prefix and any download number suffix 
     # (e.g., LIB_RC1206JR_07820RL(1).zip -> RC1206JR_07820RL)
@@ -191,12 +212,13 @@ def unzip_part_file(zip_file, parts_dir, force_overwrite=False):
     """
     import zipfile, shutil
     
-    part_number = get_part_number_from_zip_name(zip_file)
+    # get the part number from the zip file name
+    part_number = get_part_number_from_zip_or_dir_name(zip_file)
     
     # Create the full path for the new directory
     unzip_dir = os.path.join(parts_dir, part_number)
 
-    # Check if the directory already exists
+    # Check if the directory already exists and act accordingly
     if os.path.exists(unzip_dir):
         if force_overwrite:
             print(f"🗑️ Removing existing directory: {unzip_dir}")
@@ -438,8 +460,11 @@ def main():
             print(f"{COLOR_RED}aborting.{COLOR_RESET}")
             return 1
     
-    # Unzip the file and get the path to the new directory
-    unzipped_dir, part_number = unzip_part_file(zip_file, parts_dir_full, force_overwrite)
+    # Unzip the file (if necessary) and get the path to the new directory
+    if not os.path.isdir(zip_file):
+        unzipped_dir, part_number = unzip_part_file(zip_file, parts_dir_full, force_overwrite)
+    else:
+        unzipped_dir, part_number = copy_part_dir(zip_file, parts_dir_full, force_overwrite)
     if unzipped_dir is None:
         print(f"❌ error: failed to unzip {zip_file}")
         return 1
