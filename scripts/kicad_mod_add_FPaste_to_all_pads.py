@@ -1,3 +1,7 @@
+#
+# This script goes through each pad in a .kicad_mod footprint and 
+# adds an "F.Paste" layer to each pad.
+#
 import re
 
 def add_paste_layer(filename):
