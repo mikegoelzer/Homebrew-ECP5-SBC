@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TPS25730DREFR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "TPS25730DREFR" (!) = "", "TPS25730DREFR", "Other", "595-TPS25730DREFR", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS25730DREFR?qs=Z%252BL2brAPG1IvmkUK7DRnBA%3D%3D", "USB Interface IC TPS25730DREFR SARUMAN BG MCM", "https://www.ti.com/lit/ds/symlink/tps25730.pdf?ts=1707773923998&ref_url=https%253A%252F%252Fwww.mouser.at%252F", "0.8 mm"
+END_PART
+
+END.
