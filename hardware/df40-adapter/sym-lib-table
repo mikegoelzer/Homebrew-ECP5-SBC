@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DF40C_100DS_0_4V_51_")(type "KiCad")(uri "${KIPRJMOD}/../parts/DF40C_100DS_0_4V_51_/DF40C-100DS-0.4V_51_.kicad_sym")(options "")(descr ""))
+  (lib (name "M20_9991645")(type "KiCad")(uri "${KIPRJMOD}/../parts/M20_9991645/M20-9991645.kicad_sym")(options "")(descr ""))
+)
