@@ -36,9 +36,47 @@
 			)
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 21.59)
+		(size 24.13 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bc521ec3-4789-4443-8e4b-43a4a829822c")
+		(property "Sheetname" "USB PD"
+			(at 48.26 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb-pd.kicad_sch"
+			(at 48.26 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pd-booster-8amp"
+				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa"
+					(page "3")
 				)
 			)
 		)

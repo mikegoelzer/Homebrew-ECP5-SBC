@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pd-booster-null.kicad_pro",
+    "filename": "pd-booster-8amp.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -601,6 +601,10 @@
     [
       "1b4f865f-e284-48f3-9bb0-a1c9b35aed86",
       "Pass-Thru"
+    ],
+    [
+      "bc521ec3-4789-4443-8e4b-43a4a829822c",
+      "USB PD"
     ]
   ],
   "text_variables": {}

@@ -2781,7 +2781,7 @@
 			(uuid "54c1e410-5fb6-4498-9d37-a95f8a7c1264")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "IC1")
 					(unit 1)
@@ -2849,7 +2849,7 @@
 			(uuid "c078056d-a0e7-4ee8-8f77-9bddf5f6f75e")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "#PWR06")
 					(unit 1)
@@ -2946,7 +2946,7 @@
 			(uuid "604bf89f-b9a7-4823-b3ee-1d32e1a1b939")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "C2")
 					(unit 1)
@@ -3045,7 +3045,7 @@
 			(uuid "a645f75b-b64b-46f3-bb51-9b1232efa51e")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "R4")
 					(unit 1)
@@ -3113,7 +3113,7 @@
 			(uuid "16c9f640-1dfc-4cc2-97b7-23d9b187654c")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "#PWR07")
 					(unit 1)
@@ -3220,7 +3220,7 @@
 			(uuid "13384e2c-ae2e-4ca7-96e2-cd85d2b55f65")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "U2")
 					(unit 1)
@@ -3332,7 +3332,7 @@
 			(uuid "1656b361-09fd-4e10-83ea-cf88bc32a766")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "J3")
 					(unit 1)
@@ -3400,7 +3400,7 @@
 			(uuid "b9b50912-0687-45aa-8999-95cf9b826e20")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "#PWR05")
 					(unit 1)
@@ -3495,7 +3495,7 @@
 			(uuid "562e07c4-9fc3-42df-a0d7-c51e453dc6e9")
 		)
 		(instances
-			(project "pd-booster-null"
+			(project "pd-booster-8amp"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa/bc521ec3-4789-4443-8e4b-43a4a829822c"
 					(reference "J4")
 					(unit 1)
