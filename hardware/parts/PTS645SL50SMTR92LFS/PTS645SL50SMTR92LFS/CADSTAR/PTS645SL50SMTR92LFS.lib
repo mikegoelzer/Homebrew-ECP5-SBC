@@ -1,0 +1,16 @@
+.PTS645SL50SMTR92LFS :1 ;PTS645SL50SMTR92LFS (Tactile Switches)
+PTS645SMT
+*STM S
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN PTS645SL50SMTR92LFS
+~!Mouser Part Number (611-PTS645SL50SMTR92)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/CK/PTS645SL50SMTR92LFS?qs=2S%252Bb0lY%2FSrDxgBTvF2oxVQ%3D%3D)
+~!Manufacturer_Name (C & K COMPONENTS)
+~!Manufacturer_Part_Number (PTS645SL50SMTR92LFS)
+~!Link Datasheet (https://www.ckswitches.com/media/1471/pts645.pdf)
+~!Height (-)
+~!3D_Model (PTS645SL50SMTR92LFS)
+PTS645SL50SMTR92LFS
+1.1!U 2.1!U 3.1!U 4.1!U 

@@ -1,0 +1,9 @@
+Manufacturer=C & K COMPONENTS
+PartNumber=PTS645SL50SMTR92LFS
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=2.2
+Released=2018-05-01 11:47:33
+Downloaded=2024-12-30 14:59:03
+3D=Y

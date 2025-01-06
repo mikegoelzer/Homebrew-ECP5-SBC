@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PTS645SL50SMTR92LFS"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-12-06-13:04:24)
+    (mountForm default
+        (footprintRef "PTS645SMT")
+        (spec "System")
+    )
+)

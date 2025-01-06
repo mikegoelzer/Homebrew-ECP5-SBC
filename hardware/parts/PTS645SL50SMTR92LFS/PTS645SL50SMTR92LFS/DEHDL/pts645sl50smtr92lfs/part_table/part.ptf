@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PTS645SL50SMTR92LFS'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "C & K COMPONENTS", "PTS645SL50SMTR92LFS" (!) = "", "PTS645SMT", "Other", "611-PTS645SL50SMTR92", "https://www.mouser.co.uk/ProductDetail/CK/PTS645SL50SMTR92LFS?qs=2S%252Bb0lY%2FSrDxgBTvF2oxVQ%3D%3D", "PTS645SL50SMTR92LFS (Tactile Switches)", "https://www.ckswitches.com/media/1471/pts645.pdf"
+END_PART
+
+END.
