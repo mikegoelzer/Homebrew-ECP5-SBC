@@ -36,7 +36,7 @@
 			)
 		)
 		(instances
-			(project "pd-booster"
+			(project "pd-booster-null"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa"
 					(page "2")
 				)
@@ -74,7 +74,7 @@
 			)
 		)
 		(instances
-			(project "pd-booster"
+			(project "pd-booster-null"
 				(path "/ba3b59af-3ddb-4424-861a-06155feea3fa"
 					(page "3")
 				)

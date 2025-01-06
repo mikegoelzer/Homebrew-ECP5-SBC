@@ -227,7 +227,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/c9a6ec32-05fd-4009-86e0-abe0dd6dabc8")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.87 -1.33)
@@ -629,7 +629,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/92ccdcf1-30b9-46e8-a008-a0449a0d0298")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.33)
@@ -965,7 +965,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/cde24f28-7bd8-4338-8b3b-0859a89e639a")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.8415 -0.9525)
@@ -1232,7 +1232,7 @@
 		)
 		(path "/a8fc2622-c809-4ad7-a705-bb97460ad159")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.625 1.17)
@@ -1547,7 +1547,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/43c73e16-1353-4a60-af79-fbc9ea849b3f")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 0.735)
@@ -1797,7 +1797,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/1cbe57df-d8d0-47bb-bf75-a2b71d38e865")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.8415 -0.9525)
@@ -2068,7 +2068,7 @@
 		(property ki_fp_filters "STA_CSNL1206_STP STA_CSNL1206_STP-M STA_CSNL1206_STP-L")
 		(path "/ca584a67-8de1-4594-9c7d-f8b7c5f84411")
 		(sheetname "Root")
-		(sheetfile "pd-booster.kicad_sch")
+		(sheetfile "pd-booster-null.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.65765 1.0541)
