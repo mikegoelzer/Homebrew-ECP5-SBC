@@ -6121,6 +6121,17 @@
 		)
 		(uuid "e67ff8fa-d684-4f2a-91b1-c98dc4ac0e98")
 	)
+	(polyline
+		(pts
+			(xy 114.3 48.26) (xy 134.62 48.26)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(uuid "e7c38bf3-cce9-4791-b7c5-3b00af62711c")
+	)
 	(wire
 		(pts
 			(xy 128.27 190.5) (xy 125.73 190.5)
@@ -6256,6 +6267,19 @@
 		(uuid 425254af-77fa-4525-a2a8-c1a3cccc8dd6)
 	)
 	(rectangle
+		(start 102.87 35.56)
+		(end 132.08 57.15)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6afd5ec2-e331-4888-83b9-7618f82a8e06)
+	)
+	(rectangle
 		(start 21.59 69.85)
 		(end 34.29 83.82)
 		(stroke
@@ -6336,6 +6360,19 @@
 			)
 		)
 		(uuid "6cf0c128-6b41-4f57-a25f-94a343fcf8fc")
+	)
+	(text "ERROR:  wrong part \n(6.1V clamp); \nreplace with TVS2200\n22-volt clamp"
+		(exclude_from_sim no)
+		(at 156.21 54.61 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "7c67e9f9-1144-490e-8947-7a4690d4cfea")
 	)
 	(text "USB Power/Debug Port"
 		(exclude_from_sim no)
