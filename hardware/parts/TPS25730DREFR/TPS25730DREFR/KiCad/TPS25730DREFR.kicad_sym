@@ -6,8 +6,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "IC"
-			(at 39.37 7.62 0)
+		(property "Reference" "U"
+			(at 14.478 6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,7 +16,7 @@
 			)
 		)
 		(property "Value" "TPS25730DREFR"
-			(at 39.37 5.08 0)
+			(at 14.478 4.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25,7 +25,7 @@
 			)
 		)
 		(property "Footprint" "TPS25730DREFR:TPS25730DREFR"
-			(at 39.37 -94.92 0)
+			(at 5.842 -94.742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45,7 +45,7 @@
 			)
 		)
 		(property "Description" "USB Interface IC TPS25730DREFR SARUMAN BG MCM"
-			(at 0 0 0)
+			(at 20.828 -97.866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -105,8 +105,8 @@
 		)
 		(symbol "TPS25730DREFR_1_1"
 			(rectangle
-				(start 5.08 2.54)
-				(end 38.1 -55.88)
+				(start 5.08 0)
+				(end 38.1 -80.01)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -116,7 +116,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(length 5.08)
 				(name "LDO_3V3"
 					(effects
@@ -134,7 +134,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -22.86 0)
+				(at 0 -48.26 0)
 				(length 5.08)
 				(name "DBG_ACC"
 					(effects
@@ -152,7 +152,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -25.4 0)
+				(at 10.16 -85.09 90)
 				(length 5.08)
 				(name "GND_1"
 					(effects
@@ -170,7 +170,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 0)
+				(at 12.7 -85.09 90)
 				(length 5.08)
 				(name "GND_2"
 					(effects
@@ -188,7 +188,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 0)
+				(at 0 -50.8 0)
 				(length 5.08)
 				(name "PLUG_FLIP"
 					(effects
@@ -206,7 +206,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -33.02 0)
+				(at 15.24 -85.09 90)
 				(length 5.08)
 				(name "GND_3"
 					(effects
@@ -224,7 +224,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -35.56 0)
+				(at 43.18 -60.96 180)
 				(length 5.08)
 				(name "DRAIN_1"
 					(effects
@@ -242,7 +242,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -38.1 0)
+				(at 17.78 -85.09 90)
 				(length 5.08)
 				(name "GND_4"
 					(effects
@@ -260,7 +260,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -40.64 0)
+				(at 20.32 -85.09 90)
 				(length 5.08)
 				(name "GND_5"
 					(effects
@@ -314,7 +314,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 0 -30.48 0)
 				(length 5.08)
 				(name "ADCIN1"
 					(effects
@@ -332,7 +332,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -48.26 0)
+				(at 0 -17.78 0)
 				(length 5.08)
 				(name "PPHV_1"
 					(effects
@@ -350,7 +350,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -50.8 0)
+				(at 0 -20.32 0)
 				(length 5.08)
 				(name "PPHV_2"
 					(effects
@@ -368,7 +368,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -53.34 0)
+				(at 0 -22.86 0)
 				(length 5.08)
 				(name "PPHV_3"
 					(effects
@@ -386,7 +386,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 0 180)
+				(at 43.18 -17.78 180)
 				(length 5.08)
 				(name "VBUS_IN_1"
 					(effects
@@ -404,7 +404,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -2.54 180)
+				(at 43.18 -20.32 180)
 				(length 5.08)
 				(name "VBUS_IN_2"
 					(effects
@@ -422,7 +422,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -5.08 180)
+				(at 43.18 -22.86 180)
 				(length 5.08)
 				(name "VBUS_IN_3"
 					(effects
@@ -440,7 +440,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -7.62 180)
+				(at 0 -60.96 0)
 				(length 5.08)
 				(name "RESERVED_1"
 					(effects
@@ -458,7 +458,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -10.16 180)
+				(at 0 -63.5 0)
 				(length 5.08)
 				(name "RESERVED_2"
 					(effects
@@ -476,7 +476,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -12.7 180)
+				(at 43.18 -43.18 180)
 				(length 5.08)
 				(name "CC1"
 					(effects
@@ -494,7 +494,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -15.24 180)
+				(at 43.18 -45.72 180)
 				(length 5.08)
 				(name "CC2"
 					(effects
@@ -512,7 +512,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 0)
+				(at 0 -33.02 0)
 				(length 5.08)
 				(name "ADCIN2"
 					(effects
@@ -530,7 +530,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -17.78 180)
+				(at 43.18 -63.5 180)
 				(length 5.08)
 				(name "DRAIN_2"
 					(effects
@@ -548,7 +548,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -20.32 180)
+				(at 22.86 -85.09 90)
 				(length 5.08)
 				(name "GND_6"
 					(effects
@@ -566,7 +566,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -22.86 180)
+				(at 43.18 -30.48 180)
 				(length 5.08)
 				(name "VBUS_1"
 					(effects
@@ -584,7 +584,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -25.4 180)
+				(at 43.18 -33.02 180)
 				(length 5.08)
 				(name "VBUS_2"
 					(effects
@@ -602,7 +602,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -27.94 180)
+				(at 25.4 -85.09 90)
 				(length 5.08)
 				(name "GND_7"
 					(effects
@@ -620,7 +620,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -30.48 180)
+				(at 27.94 -85.09 90)
 				(length 5.08)
 				(name "GND_8"
 					(effects
@@ -638,7 +638,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -33.02 180)
+				(at 0 -66.04 0)
 				(length 5.08)
 				(name "RESERVED_3"
 					(effects
@@ -656,7 +656,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -35.56 180)
+				(at 0 -55.88 0)
 				(length 5.08)
 				(name "PLUG_EVENT"
 					(effects
@@ -674,7 +674,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -38.1 180)
+				(at 0 -12.7 0)
 				(length 5.08)
 				(name "VIN_3V3"
 					(effects
@@ -692,7 +692,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -40.64 180)
+				(at 30.48 -85.09 90)
 				(length 5.08)
 				(name "GND_9"
 					(effects
@@ -728,7 +728,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -43.18 180)
+				(at 43.18 -66.04 180)
 				(length 5.08)
 				(name "DRAIN_3"
 					(effects
@@ -746,7 +746,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -45.72 180)
+				(at 0 -25.4 0)
 				(length 5.08)
 				(name "PPHV_4"
 					(effects
@@ -764,7 +764,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -48.26 180)
+				(at 43.18 -25.4 180)
 				(length 5.08)
 				(name "VBUS_IN_4"
 					(effects
@@ -782,7 +782,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -50.8 180)
+				(at 43.18 -35.56 180)
 				(length 5.08)
 				(name "VBUS_3"
 					(effects
@@ -800,7 +800,7 @@
 				)
 			)
 			(pin passive line
-				(at 43.18 -53.34 180)
+				(at 33.02 -85.09 90)
 				(length 5.08)
 				(name "GND_10"
 					(effects
@@ -818,7 +818,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -10.16 0)
+				(at 0 -35.56 0)
 				(length 5.08)
 				(name "ADCIN3"
 					(effects
@@ -836,7 +836,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 0)
+				(at 0 -53.34 0)
 				(length 5.08)
 				(name "CAP_MIS"
 					(effects
@@ -854,7 +854,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 0)
+				(at 0 -38.1 0)
 				(length 5.08)
 				(name "ADCIN4"
 					(effects
@@ -872,7 +872,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -17.78 0)
+				(at 43.18 -54.61 180)
 				(length 5.08)
 				(name "I2CT_SDA"
 					(effects
@@ -890,7 +890,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -20.32 0)
+				(at 43.18 -52.07 180)
 				(length 5.08)
 				(name "I2CT_SCL"
 					(effects

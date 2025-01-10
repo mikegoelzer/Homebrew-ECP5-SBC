@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "CSNL1206FT2L00 ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0.185 -1.99 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "185d2ce4-c7bd-42ca-a08c-24d9d617eec4")
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "STA_CSNL1206_STP"
-		(at 0 0 0)
+		(at 0.105 2.11 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "509e8ae4-dd73-4afe-b4d8-9b49c8647a84")
@@ -246,7 +246,7 @@
 		(uuid "ac1b578d-1f9f-4882-a373-e1938aed3e80")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0.075 3.61 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "b7fe3d31-7fae-4e10-a0e2-0ca02b457d70")
@@ -268,34 +268,6 @@
 		(size 0.9652 1.8542)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "105b0fc7-9c79-4a62-b687-b3d487314135")
-	)
-	(zone
-		(net 0)
-		(net_name "")
-		(layer "F.Cu")
-		(uuid "31334e16-25cb-49a9-b8e6-a6a5a36e649b")
-		(hatch full 0.508)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.254)
-		(filled_areas_thickness no)
-		(keepout
-			(tracks not_allowed)
-			(vias not_allowed)
-			(pads allowed)
-			(copperpour not_allowed)
-			(footprints allowed)
-		)
-		(fill
-			(thermal_gap 0.508)
-			(thermal_bridge_width 0.508)
-		)
-		(polygon
-			(pts
-				(xy -0.9144 -0.8763) (xy 0.9144 -0.8763) (xy 0.9144 0.8763) (xy -0.9144 0.8763)
-			)
-		)
 	)
 	(model "${KIPRJMOD}/../parts/CSNL1206FT2L00/CSNL1206FT2L00.step"
 		(offset

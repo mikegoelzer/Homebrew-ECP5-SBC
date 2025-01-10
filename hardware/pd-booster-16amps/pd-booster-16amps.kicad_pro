@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1524,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.1524
         }
       },
       "diff_pair_dimensions": [
@@ -85,7 +85,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -96,7 +96,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
@@ -105,18 +105,18 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "warning",
+        "track_dangling": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1524,
-        "min_connection": 0.1524,
+        "min_clearance": 0.127,
+        "min_connection": 0.127,
         "min_copper_edge_clearance": 0.381,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.127,
@@ -124,12 +124,12 @@
         "min_microvia_drill": 0.0,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.381,
+        "min_text_height": 0.508,
         "min_text_thickness": 0.0762,
         "min_through_hole_diameter": 0.254,
-        "min_track_width": 0.1524,
-        "min_via_annular_width": 0.127,
-        "min_via_diameter": 0.508,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1016,
+        "min_via_diameter": 0.4572,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -178,10 +178,13 @@
       ],
       "track_widths": [
         0.0,
+        0.127,
         0.1524,
         0.2032,
         0.254,
-        0.381
+        0.381,
+        0.508,
+        1.016
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -215,8 +218,20 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.4572,
+          "drill": 0.254
+        },
+        {
           "diameter": 0.508,
           "drill": 0.254
+        },
+        {
+          "diameter": 0.762,
+          "drill": 0.508
+        },
+        {
+          "diameter": 1.016,
+          "drill": 0.762
         }
       ],
       "zones_allow_external_fillets": false
@@ -451,7 +466,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pd-booster-8amp.kicad_pro",
+    "filename": "pd-booster-16amps.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -469,7 +484,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
-        "via_diameter": 0.508,
+        "via_diameter": 0.4572,
         "via_drill": 0.254,
         "wire_width": 6
       }
@@ -599,12 +614,28 @@
       "Root"
     ],
     [
-      "1b4f865f-e284-48f3-9bb0-a1c9b35aed86",
-      "Pass-Thru"
-    ],
-    [
       "bc521ec3-4789-4443-8e4b-43a4a829822c",
       "USB PD"
+    ],
+    [
+      "51eba014-198c-4a0e-be60-07ce08696ba1",
+      "DC Barrel"
+    ],
+    [
+      "7d236bdf-d431-4adf-9225-de95b783ceb3",
+      "Power Mux"
+    ],
+    [
+      "7ece75ee-8c56-4743-8684-bd00aa48be29",
+      "Buck-Boost"
+    ],
+    [
+      "7a0f4739-8c55-4861-84f8-95c8b6ca27aa",
+      "Connectors"
+    ],
+    [
+      "887ab3cc-e4b5-40d1-bcfc-26047d4b4cc0",
+      "LDO"
     ]
   ],
   "text_variables": {}

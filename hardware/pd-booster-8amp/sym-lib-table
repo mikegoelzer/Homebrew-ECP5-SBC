@@ -1,6 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "TPS25730DREFR")(type "KiCad")(uri "${KIPRJMOD}/../parts/TPS25730DREFR/TPS25730DREFR/KiCad/TPS25730DREFR.kicad_sym")(options "")(descr ""))
-  (lib (name "INA211BIDCKT")(type "KiCad")(uri "${KIPRJMOD}/../parts/INA211BIDCKT/INA211BIDCKT.kicad_sym")(options "")(descr ""))
-  (lib (name "CSNL1206FT2L00")(type "KiCad")(uri "${KIPRJMOD}/../parts/CSNL1206FT2L00/KiCADv6/2024-09-16_04-44-39.kicad_sym")(options "")(descr ""))
-)
