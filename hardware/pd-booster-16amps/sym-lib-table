@@ -22,5 +22,5 @@
   (lib (name "LP2950CDTX_3.3")(type "KiCad")(uri "${KIPRJMOD}/../parts/LP2950CDTX_3_3_NOPB/LP2950CDTX_3.3.kicad_sym")(options "")(descr ""))
   (lib (name "TPS259470ARPWR")(type "KiCad")(uri "${KIPRJMOD}/../parts/TPS259470ARPWR/KiCADv6/2025-01-09_01-47-34.kicad_sym")(options "")(descr ""))
   (lib (name "TPS259474ARPWR")(type "KiCad")(uri "${KIPRJMOD}/../parts/TPS259474ARPWR/TPS259474ARPWR.kicad_sym")(options "")(descr ""))
-  (lib (name "Mousebites")(type "KiCad")(uri "/Users/mwg/code/EE Projects 2022-/Homebrew-ECP5-SBC/hardware/parts/Mousebites.pretty/Mousebites.kicad_sym")(options "")(descr ""))
+  (lib (name "Mousebites")(type "KiCad")(uri "${KIPRJMOD}/../parts/Mousebites.pretty/Mousebites.kicad_sym")(options "")(descr ""))
 )

@@ -21,4 +21,5 @@
   (lib (name "LP2950CDTX_3.3")(type "KiCad")(uri "${KIPRJMOD}/../parts/LP2950CDTX_3_3_NOPB/footprints.pretty")(options "")(descr ""))
   (lib (name "TPS259470ARPWR")(type "KiCad")(uri "${KIPRJMOD}/../parts/TPS259470ARPWR/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "TPS259474ARPWR")(type "KiCad")(uri "${KIPRJMOD}/../parts/TPS259474ARPWR")(options "")(descr ""))
+  (lib (name "Mousebites")(type "KiCad")(uri "${KIPRJMOD}/../parts/Mousebites.pretty")(options "")(descr ""))
 )
