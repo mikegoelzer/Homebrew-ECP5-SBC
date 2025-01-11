@@ -33,7 +33,7 @@ def rename_kicad_project(old_name, new_name):
     current_dir = Path('.')
     
     # First, replace text inside all .kicad_* files
-    kicad_files = list(current_dir.glob("*.kicad_*")) + list(current_dir.glob("*.kicad_sch"))
+    kicad_files = list(current_dir.glob("*.kicad_*"))
     
     print("\nUpdating file contents...")
     for filepath in kicad_files:
