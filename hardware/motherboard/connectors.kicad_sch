@@ -3681,6 +3681,16 @@
 		)
 		(uuid "16db1c4e-4eab-47a1-9f87-a36593b5face")
 	)
+	(polyline
+		(pts
+			(xy 26.67 27.94) (xy 26.67 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "192b6840-1669-4235-8b06-80d5d53d6fce")
+	)
 	(wire
 		(pts
 			(xy 161.29 63.5) (xy 163.83 63.5)
@@ -3811,6 +3821,16 @@
 		)
 		(uuid "d96e9080-0b3b-4816-a3b9-58c627d32719")
 	)
+	(polyline
+		(pts
+			(xy 31.75 27.94) (xy 31.75 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da0f12fd-e016-4518-8c3e-7450851f0fc0")
+	)
 	(wire
 		(pts
 			(xy 217.17 63.5) (xy 222.25 63.5)
@@ -3856,6 +3876,19 @@
 		(uuid 4417d659-0c57-4805-b8c6-8874f4822bf6)
 	)
 	(rectangle
+		(start 20.32 27.94)
+		(end 38.1 114.3)
+		(stroke
+			(width 0.381)
+			(type dash)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a87fd6ee-ac74-4e91-9dd3-bf0546c8093d)
+	)
+	(rectangle
 		(start 114.3 13.97)
 		(end 248.92 151.13)
 		(stroke
@@ -3891,6 +3924,62 @@
 		)
 		(uuid "16548316-5f35-473b-b658-36900ce8df4e")
 	)
+	(text "TODO:  GND"
+		(exclude_from_sim no)
+		(at 27.94 114.3 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "206b52d9-f2e7-443c-90fe-5dafb69568a3")
+	)
+	(text "TODO:  +3V3"
+		(exclude_from_sim no)
+		(at 22.86 114.3 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "41b4e3db-830a-4b4f-bc2b-7242e46b1475")
+	)
+	(text "TODO:  +3V3"
+		(exclude_from_sim no)
+		(at 22.86 46.99 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "4dffcfad-f769-4e7f-883c-443865dfbef7")
+	)
+	(text "TODO:  +3V3"
+		(exclude_from_sim no)
+		(at 25.4 46.99 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "59c398f7-b278-4fe4-9ad5-0fa6ca7b9ddd")
+	)
 	(text "Expansion Modules"
 		(exclude_from_sim no)
 		(at 184.15 19.05 0)
@@ -3902,6 +3991,20 @@
 			)
 		)
 		(uuid "5f19ee6f-5343-4aed-b8db-013c5b9b4763")
+	)
+	(text "TODO:  GND"
+		(exclude_from_sim no)
+		(at 30.48 46.99 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "6e0a5cf7-68aa-495b-adfc-5b28b944d2f4")
 	)
 	(text "PMODs"
 		(exclude_from_sim no)
@@ -3915,6 +4018,20 @@
 		)
 		(uuid "70f96e19-8296-45a3-8ce4-f502cbce887b")
 	)
+	(text "TODO:  GND"
+		(exclude_from_sim no)
+		(at 27.94 46.99 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "9ec0b6de-f520-4b8b-b1db-3853bddd9f75")
+	)
 	(text "JTAG & Programming Pins"
 		(exclude_from_sim no)
 		(at 146.05 157.48 0)
@@ -3926,6 +4043,48 @@
 			)
 		)
 		(uuid "a59890c1-36ec-4b15-a2fe-8d86681ae568")
+	)
+	(text "TODO:  GND"
+		(exclude_from_sim no)
+		(at 30.48 114.3 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "caf4f409-6571-49d8-9e9b-3db53ce5e976")
+	)
+	(text "TODO:  +3V3"
+		(exclude_from_sim no)
+		(at 25.4 114.3 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "d070617f-1ae2-4d80-a244-35c8a2a728b6")
+	)
+	(text "TODO:  more gpios"
+		(exclude_from_sim no)
+		(at 35.56 85.09 90)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "de16a467-23aa-4c0c-be47-ce0d06e13545")
 	)
 	(text "Connectors"
 		(exclude_from_sim no)
