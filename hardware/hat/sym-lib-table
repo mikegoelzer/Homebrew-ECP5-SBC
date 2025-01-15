@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FH12-32S-0.5SVA")(type "KiCad")(uri "${KIPRJMOD}/../parts/FH12-32S-0.5SVA/FH12-32S-0.5SVA(54)/FH12-32S-0_5SVA_54_.kicad_sym")(options "")(descr ""))
+  (lib (name "KeystoneTestpoints")(type "KiCad")(uri "${KIPRJMOD}/../parts/Keystone_Testpoints/KeystoneTestpoints.kicad_sym")(options "")(descr ""))
+  (lib (name "Mousebites")(type "KiCad")(uri "${KIPRJMOD}/../parts/Mousebites.pretty/Mousebites.kicad_sym")(options "")(descr ""))
+  (lib (name "Adafruit_Modules")(type "KiCad")(uri "${KIPRJMOD}/../parts/Adafruit/Adafruit_Modules.kicad_sym")(options "")(descr ""))
+  (lib (name "HiLetgo")(type "KiCad")(uri "${KIPRJMOD}/../parts/HiLetgo/hiletgo_oled.kicad_sym")(options "")(descr ""))
+  (lib (name "MSD_4_A")(type "KiCad")(uri "${KIPRJMOD}/../parts/MSD_4_A/MSD-4-A.kicad_sym")(options "")(descr ""))
+  (lib (name "QBLP631_White_LED")(type "KiCad")(uri "${KIPRJMOD}/../parts/QBLP631_IW/QBLP631_White_LED.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,504 @@
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "kicad_symbol_editor")
+	(generator_version "8.0")
+	(symbol "MSD-4-A"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at -4.318 23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MSD-4-A"
+			(at -4.826 21.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "MSD_4_A:CUI_MSD-4-A"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.cuidevices.com/product/resource/digikeypdf/msd-4-a.pdf"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MICRO SD CARD CONNECTOR, 9 POSIT, Push-In/Auto-Eject"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.0"
+			(at 0.254 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "2.00mm"
+			(at 0 -37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "CUI Devices"
+			(at 0.508 -40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/MSD-4-A/21796808"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfgr" "Same Sky (CUI)"
+			(at 2.794 -32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MSD-4-A"
+			(at 0.254 -38.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MSD-4-A_0_0"
+			(rectangle
+				(start -10.16 20.32)
+				(end 10.16 -27.94)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -2.54 0)
+				(length 5.08)
+				(name "DAT2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -5.08 0)
+				(length 5.08)
+				(name "CD/DAT3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
+				(length 5.08)
+				(name "CMD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 17.78 0)
+				(length 5.08)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input clock
+				(at -15.24 12.7 0)
+				(length 5.08)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -15.24 0)
+				(length 5.08)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
+				(length 5.08)
+				(name "DAT0"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 0 0)
+				(length 5.08)
+				(name "DAT1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -10.16 0)
+				(length 5.08)
+				(name "CD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "CD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -17.78 0)
+				(length 5.08)
+				(name "COVER_GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "G1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -20.32 0)
+				(length 5.08)
+				(name "COVER_GND__1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "G2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -22.86 0)
+				(length 5.08)
+				(name "COVER_GND__2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "G3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -25.4 0)
+				(length 5.08)
+				(name "COVER_GND__3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "G4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MSD-4-A_1_0"
+			(polyline
+				(pts
+					(xy 5.2368 -0.0941) (xy 4.9859 -0.0941) (xy 4.9859 1.9128) (xy 5.2368 1.9128) (xy 5.2368 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.7385 -0.0941) (xy 5.4877 -0.0941) (xy 5.4877 1.9128) (xy 5.7385 1.9128) (xy 5.7385 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.2403 -0.0941) (xy 5.9894 -0.0941) (xy 5.9894 1.9128) (xy 6.2403 1.9128) (xy 6.2403 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.742 -0.0941) (xy 6.4911 -0.0941) (xy 6.4911 1.9128) (xy 6.742 1.9128) (xy 6.742 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.2437 -0.0941) (xy 6.9928 -0.0941) (xy 6.9928 1.9128) (xy 7.2437 1.9128) (xy 7.2437 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.7454 -0.0941) (xy 7.4946 -0.0941) (xy 7.4946 1.9128) (xy 7.7454 1.9128) (xy 7.7454 -0.0941)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.016 2.5395) (xy 8.035 2.538) (xy 8.0538 2.5356) (xy 8.0723 2.5323) (xy 8.0905 2.5281) (xy 8.1083 2.523)
+					(xy 8.1258 2.5171) (xy 8.1428 2.5103) (xy 8.1595 2.5028) (xy 8.1757 2.4944) (xy 8.1914 2.4853)
+					(xy 8.2067 2.4755) (xy 8.2214 2.465) (xy 8.2356 2.4538) (xy 8.2493 2.4419) (xy 8.2624 2.4294) (xy 8.2748 2.4163)
+					(xy 8.2866 2.4026) (xy 8.2978 2.3884) (xy 8.3083 2.3736) (xy 8.3181 2.3583) (xy 8.3271 2.3425)
+					(xy 8.3355 2.3262) (xy 8.343 2.3095) (xy 8.3497 2.2924) (xy 8.3557 2.2749) (xy 8.3607 2.257) (xy 8.3649 2.2388)
+					(xy 8.3683 2.2202) (xy 8.3706 2.2014) (xy 8.3721 2.1822) (xy 8.3726 2.1628) (xy 8.3726 -3.8562)
+					(xy 8.3721 -3.8756) (xy 8.3706 -3.8947) (xy 8.3682 -3.9135) (xy 8.3649 -3.9321) (xy 8.3607 -3.9503)
+					(xy 8.3556 -3.9682) (xy 8.3497 -3.9857) (xy 8.343 -4.0029) (xy 8.3354 -4.0196) (xy 8.3271 -4.0358)
+					(xy 8.318 -4.0516) (xy 8.3082 -4.0669) (xy 8.2977 -4.0817) (xy 8.2865 -4.096) (xy 8.2747 -4.1096)
+					(xy 8.2622 -4.1228) (xy 8.2491 -4.1352) (xy 8.2354 -4.1471) (xy 8.2212 -4.1583) (xy 8.2064 -4.1688)
+					(xy 8.1912 -4.1787) (xy 8.1754 -4.1878) (xy 8.1592 -4.1961) (xy 8.1425 -4.2037) (xy 8.1254 -4.2104)
+					(xy 8.1079 -4.2164) (xy 8.09 -4.2214) (xy 8.0718 -4.2257) (xy 8.0533 -4.229) (xy 8.0345 -4.2314)
+					(xy 8.0154 -4.2328) (xy 7.9961 -4.2333) (xy 3.8573 -4.2333) (xy 3.8379 -4.2328) (xy 3.8188 -4.2314)
+					(xy 3.8 -4.229) (xy 3.7815 -4.2257) (xy 3.7633 -4.2214) (xy 3.7454 -4.2164) (xy 3.7279 -4.2104)
+					(xy 3.7109 -4.2037) (xy 3.6942 -4.1961) (xy 3.6779 -4.1878) (xy 3.6622 -4.1787) (xy 3.6469 -4.1689)
+					(xy 3.6321 -4.1583) (xy 3.6179 -4.1471) (xy 3.6042 -4.1353) (xy 3.5912 -4.1228) (xy 3.5787 -4.1097)
+					(xy 3.5668 -4.096) (xy 3.5556 -4.0818) (xy 3.5451 -4.067) (xy 3.5353 -4.0517) (xy 3.5263 -4.0359)
+					(xy 3.5179 -4.0197) (xy 3.5104 -4.003) (xy 3.5036 -3.9859) (xy 3.4977 -3.9683) (xy 3.4926 -3.9505)
+					(xy 3.4884 -3.9322) (xy 3.4851 -3.9137) (xy 3.4827 -3.8949) (xy 3.4812 -3.8757) (xy 3.4807 -3.8564)
+					(xy 3.7316 -3.8564) (xy 3.7318 -3.8628) (xy 3.7323 -3.8692) (xy 3.7331 -3.8755) (xy 3.7342 -3.8817)
+					(xy 3.7356 -3.8878) (xy 3.7373 -3.8938) (xy 3.7392 -3.8997) (xy 3.7415 -3.9054) (xy 3.744 -3.911)
+					(xy 3.7468 -3.9164) (xy 3.7498 -3.9217) (xy 3.7531 -3.9268) (xy 3.7566 -3.9318) (xy 3.7603 -3.9365)
+					(xy 3.7643 -3.9411) (xy 3.7684 -3.9455) (xy 3.7728 -3.9497) (xy 3.7774 -3.9536) (xy 3.7821 -3.9574)
+					(xy 3.787 -3.9609) (xy 3.7921 -3.9642) (xy 3.7974 -3.9672) (xy 3.8028 -3.97) (xy 3.8084 -3.9725)
+					(xy 3.8141 -3.9748) (xy 3.8199 -3.9768) (xy 3.8259 -3.9785) (xy 3.832 -3.9799) (xy 3.8382 -3.981)
+					(xy 3.8444 -3.9818) (xy 3.8508 -3.9823) (xy 3.8573 -3.9825) (xy 7.9961 -3.9825) (xy 8.0025 -3.9823)
+					(xy 8.0089 -3.9818) (xy 8.0152 -3.981) (xy 8.0214 -3.9799) (xy 8.0274 -3.9785) (xy 8.0334 -3.9768)
+					(xy 8.0392 -3.9748) (xy 8.0449 -3.9725) (xy 8.0505 -3.97) (xy 8.0559 -3.9672) (xy 8.0612 -3.9642)
+					(xy 8.0663 -3.9609) (xy 8.0712 -3.9573) (xy 8.076 -3.9536) (xy 8.0805 -3.9496) (xy 8.0849 -3.9454)
+					(xy 8.0891 -3.9411) (xy 8.093 -3.9365) (xy 8.0967 -3.9317) (xy 8.1002 -3.9267) (xy 8.1035 -3.9216)
+					(xy 8.1065 -3.9163) (xy 8.1093 -3.9109) (xy 8.1118 -3.9053) (xy 8.1141 -3.8996) (xy 8.1161 -3.8937)
+					(xy 8.1178 -3.8877) (xy 8.1192 -3.8816) (xy 8.1203 -3.8754) (xy 8.1211 -3.8691) (xy 8.1216 -3.8627)
+					(xy 8.1217 -3.8562) (xy 8.1217 2.1628) (xy 8.1216 2.1693) (xy 8.1211 2.1757) (xy 8.1203 2.1821)
+					(xy 8.1192 2.1883) (xy 8.1178 2.1944) (xy 8.1161 2.2004) (xy 8.1141 2.2062) (xy 8.1119 2.212) (xy 8.1094 2.2176)
+					(xy 8.1066 2.223) (xy 8.1036 2.2283) (xy 8.1003 2.2334) (xy 8.0969 2.2384) (xy 8.0931 2.2431) (xy 8.0892 2.2477)
+					(xy 8.0851 2.2521) (xy 8.0807 2.2563) (xy 8.0762 2.2603) (xy 8.0714 2.264) (xy 8.0665 2.2675) (xy 8.0615 2.2708)
+					(xy 8.0562 2.2739) (xy 8.0508 2.2767) (xy 8.0453 2.2792) (xy 8.0396 2.2815) (xy 8.0338 2.2834)
+					(xy 8.0279 2.2852) (xy 8.0218 2.2866) (xy 8.0157 2.2877) (xy 8.0094 2.2885) (xy 8.0031 2.289) (xy 7.9967 2.2891)
+					(xy 5.0379 2.2891) (xy 3.7316 0.9829) (xy 3.7316 -3.8564) (xy 3.4807 -3.8564) (xy 3.4807 1.0348)
+					(xy 3.4809 1.041) (xy 3.4814 1.0472) (xy 3.4821 1.0533) (xy 3.4832 1.0594) (xy 3.4845 1.0654) (xy 3.4862 1.0713)
+					(xy 3.4881 1.0771) (xy 3.4903 1.0828) (xy 3.4928 1.0884) (xy 3.4955 1.0939) (xy 3.4985 1.0992)
+					(xy 3.5018 1.1044) (xy 3.5054 1.1094) (xy 3.5092 1.1143) (xy 3.5132 1.119) (xy 3.5175 1.1235) (xy 4.8972 2.5032)
+					(xy 4.9017 2.5075) (xy 4.9064 2.5116) (xy 4.9113 2.5154) (xy 4.9163 2.5189) (xy 4.9215 2.5222)
+					(xy 4.9269 2.5252) (xy 4.9323 2.528) (xy 4.9379 2.5304) (xy 4.9436 2.5326) (xy 4.9494 2.5346) (xy 4.9553 2.5362)
+					(xy 4.9613 2.5376) (xy 4.9674 2.5386) (xy 4.9735 2.5394) (xy 4.9797 2.5398) (xy 4.9859 2.54) (xy 7.9967 2.54)
+					(xy 8.016 2.5395)
+				)
+				(stroke
+					(width -0.0001)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+	)
+)

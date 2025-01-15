@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "FH12-32S-0.5SVA")(type "KiCad")(uri "${KIPRJMOD}/../parts/FH12-32S-0.5SVA/FH12-32S-0.5SVA(54)")(options "")(descr ""))
+  (lib (name "Wurth-150080xS7500-Series")(type "KiCad")(uri "${KIPRJMOD}/../parts/Wurth-150080xS7500-Series-LEDs/Wurth-150080xS7500-Series.pretty")(options "")(descr ""))
+  (lib (name "SolderJumpers")(type "KiCad")(uri "${KIPRJMOD}/../parts/SolderJumpers/SolderJumpers.pretty")(options "")(descr ""))
+  (lib (name "KeystoneTestpoints")(type "KiCad")(uri "${KIPRJMOD}/../parts/Keystone_Testpoints/KeystoneTestpoints.pretty")(options "")(descr ""))
+  (lib (name "LogoLibrary")(type "KiCad")(uri "${KIPRJMOD}/../parts/oshw-logo/LogoLibrary.pretty")(options "")(descr ""))
+  (lib (name "Mousebites")(type "KiCad")(uri "${KIPRJMOD}/../parts/Mousebites.pretty")(options "")(descr ""))
+  (lib (name "Adafruit_Modules")(type "KiCad")(uri "${KIPRJMOD}/../parts/Adafruit/Adafruit_Modules.pretty")(options "")(descr ""))
+  (lib (name "HiLetgo")(type "KiCad")(uri "${KIPRJMOD}/../parts/HiLetgo/HiLetgo.pretty")(options "")(descr ""))
+  (lib (name "MSD_4_A")(type "KiCad")(uri "${KIPRJMOD}/../parts/MSD_4_A")(options "")(descr ""))
+  (lib (name "QBLP631_White_LED")(type "KiCad")(uri "${KIPRJMOD}/../parts/QBLP631_IW/QBLP631_White_LED.pretty")(options "")(descr ""))
+)
