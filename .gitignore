@@ -9,3 +9,6 @@
 # Excel temporary files
 ~$*.xls
 ~$*.xlsx
+
+# Gerber directories underneath each PCB folder
+**/gerbers/*
