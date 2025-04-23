@@ -31,6 +31,6 @@ I also borrowed ideas from several other open-source ECP5 designs:
 
 ## License
 
-This material is licensed under CERN-OHL-S v2 (or later), a strong "copyleft" license. If you require more permissive terms or patent protection, please contact the author. A copy of the license can be found in the [LICENSES](./LICENSES) directory.
+This material is licensed under `CERN-OHL-S v2` (or later), a strong "copyleft" license. If you require more permissive terms or patent protection, please contact the author. A copy of the license can be found in the [LICENSES](./LICENSES) directory.
 
 Copyright © 2025 Mike Goelzer <mike@goelzer.org>
