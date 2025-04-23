@@ -10,10 +10,10 @@ In this repo, you'll find all the Kicad files and bills of materials needed to c
 
 This repo contains the Kicad files for the actual hardware of the computer.  There are several PCBs:
 
-- [Compute Module](./cm/readme.md). This is the heart of the computer:  an FPGA that implements the RISC-V CPU and some SDRAM that serves as the computer's main memory. It has two 100-pin Hirose DF13 snap-in connectors on the bottom, which mate with the motherboard.
-- [Motherboard](./motherboard/readme.md). The Compute Module snaps into this motherboard, which breaks out the common PC periperal interfaces, like HDMI, VGA, JTAG, and more.  It also has an SD card to serve as the computer's "hard drive," a boot flash, and some diagnostic LEDs and switches.
-- [Power Supply](./pd-booster-16amps/readme.md). Power initially comes into the motherboard via a USB-C cable.  Because I wanted to learn a bit about USB Power Deliver (USB-PD) as part of this project, I designed this plug-in board that negotiates higher voltages and currents and then buck-boost converts them to a stable 5V to power the motherboard.
-- [Hat](./hat/readme.md).  This is a top board that sits above the motherboard on standoffs and provides a touch screen plus a smaller OLED display for debugging your Verilog.  The name is, of course, inspired by the Pi HAT, though it bears no electrical or mechanical resemblance.
+- [Compute Module](./hardware/cm/readme.md). This is the heart of the computer:  an FPGA that implements the RISC-V CPU and some SDRAM that serves as the computer's main memory. It has two 100-pin Hirose DF13 snap-in connectors on the bottom, which mate with the motherboard.
+- [Motherboard](./hardware/motherboard/readme.md). The Compute Module snaps into this motherboard, which breaks out the common PC periperal interfaces, like HDMI, VGA, JTAG, and more.  It also has an SD card to serve as the computer's "hard drive," a boot flash, and some diagnostic LEDs and switches.
+- [Power Supply](./hardware/pd-booster-16amps/readme.md). Power initially comes into the motherboard via a USB-C cable.  Because I wanted to learn a bit about USB Power Deliver (USB-PD) as part of this project, I designed this plug-in board that negotiates higher voltages and currents and then buck-boost converts them to a stable 5V to power the motherboard.
+- [Hat](./hardware/hat/readme.md).  This is a top board that sits above the motherboard on standoffs and provides a touch screen plus a smaller OLED display for debugging your Verilog.  The name is, of course, inspired by the Pi HAT, though it bears no electrical or mechanical resemblance.
 
 ## About this project
 
