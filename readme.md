@@ -4,11 +4,9 @@ This is the hardware repo for a homebrew "personal computer" designed from scrat
 
 This computer is based on [my custom RISC-V CPU core](https://github.com/mikegoelzer/riscv) (pipelined, in-order, 5-stage) and has all the common peripherals you'd expect on a PC circa the early-2000s like USB, HDMI, keyboard and mouse, etc.
 
-In this repo, you'll find all the Kicad files and bills of materials needed to construct the entire computer.
-
 ## Hardware
 
-This repo contains the Kicad files for the actual hardware of the computer.  There are several PCBs:
+In this repo, you'll find all the Kicad files and bills of materials needed to construct the entire computer.  There are several PCBs:
 
 - [Compute Module](./hardware/cm/readme.md). This is the heart of the computer:  an FPGA that implements the RISC-V CPU and some SDRAM that serves as the computer's main memory. It has two 100-pin Hirose DF13 snap-in connectors on the bottom, which mate with the motherboard.
 - [Motherboard](./hardware/motherboard/readme.md). The Compute Module snaps into this motherboard, which breaks out the common PC periperal interfaces, like HDMI, VGA, JTAG, and more.  It also has an SD card to serve as the computer's "hard drive," a boot flash, and some diagnostic LEDs and switches.
