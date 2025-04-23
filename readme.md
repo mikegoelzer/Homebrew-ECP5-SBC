@@ -1,8 +1,10 @@
-# Homebrew RISC-V Personal Computer
+# Homebrew RISC-V Computer
 
 This is the hardware repo for a homebrew "personal computer" designed from scratch down to the logic gate level.
 
-This computer is based on [my custom RISC-V CPU core](https://github.com/mikegoelzer/riscv) (pipelined, in-order, 5-stage) and has all the common peripherals you'd expect on a PC circa the early-2000s like USB, HDMI, keyboard and mouse, etc.
+The computer is based on [my custom RISC-V CPU core](https://github.com/mikegoelzer/riscv) (pipelined, in-order, 5-stage) and has all the common peripherals you'd expect on a PC circa the early-2000s like USB, HDMI, keyboard and mouse, etc.
+
+This repo is focused specifically on the PCBs necessary to build the complete computer.
 
 ## Hardware
 
