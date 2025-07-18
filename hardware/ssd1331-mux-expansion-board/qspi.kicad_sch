@@ -875,7 +875,7 @@
 			(uuid "53f571e5-d8fd-432b-81ec-df5bd3251ff4")
 		)
 		(instances
-			(project "CarrierBoard-Rev1"
+			(project "4xOLED-Rev1"
 				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6/640b6c91-de7b-4c79-88c6-1ebacdec8c6f"
 					(reference "#PWR010")
 					(unit 1)
@@ -942,7 +942,7 @@
 			(uuid "8d3f2db3-9ad4-4f25-8785-95ad31423acf")
 		)
 		(instances
-			(project "CarrierBoard-Rev1"
+			(project "4xOLED-Rev1"
 				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6/640b6c91-de7b-4c79-88c6-1ebacdec8c6f"
 					(reference "R1")
 					(unit 1)
@@ -1007,7 +1007,7 @@
 			(uuid "bd8902eb-788c-42ec-bad1-73d5d43e16a1")
 		)
 		(instances
-			(project "CarrierBoard-Rev1"
+			(project "4xOLED-Rev1"
 				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6/640b6c91-de7b-4c79-88c6-1ebacdec8c6f"
 					(reference "#PWR09")
 					(unit 1)
@@ -1093,7 +1093,7 @@
 			(uuid "ddbdc65b-e0cf-4ca5-ab0a-a681a3d39b2b")
 		)
 		(instances
-			(project "CarrierBoard-Rev1"
+			(project "4xOLED-Rev1"
 				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6/640b6c91-de7b-4c79-88c6-1ebacdec8c6f"
 					(reference "U2")
 					(unit 1)
@@ -1158,7 +1158,7 @@
 			(uuid "7ab3540e-a9f4-4431-8790-37b9d1a48f31")
 		)
 		(instances
-			(project "CarrierBoard-Rev1"
+			(project "4xOLED-Rev1"
 				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6/640b6c91-de7b-4c79-88c6-1ebacdec8c6f"
 					(reference "#PWR08")
 					(unit 1)

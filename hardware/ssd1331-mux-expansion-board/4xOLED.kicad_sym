@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "CarrierBoard:SW_JS5208"
+		(property "Footprint" "4xOLED:SW_JS5208"
 			(at 0 0 0)
 			(effects
 				(font
