@@ -1,0 +1,499 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "00ed34d1-f093-41ac-ab8d-6fe71740a8f6")
+	(paper "A4")
+	(lib_symbols
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 46.99 179.705) (xy 46.99 183.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "544aa057-17bb-4ca4-bdb5-af53cf73fff8")
+	)
+	(text "a"
+		(exclude_from_sim no)
+		(at 39.37 33.02 0)
+		(effects
+			(font
+				(face "Webdings")
+				(size 10.16 10.16)
+				(thickness 1.016)
+				(bold yes)
+				(color 0 255 0 1)
+			)
+		)
+		(uuid "28dbcf92-8083-49ac-aecc-7f6dae252252")
+	)
+	(text "?"
+		(exclude_from_sim no)
+		(at 76.2 33.02 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "35f17e0a-a42a-4b0d-9adb-19b2ceeb3857")
+	)
+	(text "a"
+		(exclude_from_sim no)
+		(at 113.03 33.02 0)
+		(effects
+			(font
+				(face "Webdings")
+				(size 10.16 10.16)
+				(thickness 1.016)
+				(bold yes)
+				(color 0 255 0 1)
+			)
+		)
+		(uuid "6b6eaca1-fee9-448c-9086-2cc34315a06f")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 46.99 179.705 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69ab978a-9682-41e7-8d6c-57cfc68e1e96")
+		(property "Reference" "#FLG01"
+			(at 46.99 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 46.99 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 46.99 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "682ba77f-6f91-49c9-89c1-00516903914b")
+		)
+		(instances
+			(project "CarrierBoard-Rev1"
+				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 183.515 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7d5c895-ac17-4dc7-bc8d-1bcc76a2055f")
+		(property "Reference" "#PWR017"
+			(at 46.99 189.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "facb3770-9ebd-4506-a128-5872401db53b")
+		)
+		(instances
+			(project "CarrierBoard-Rev1"
+				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 59.69 40.005)
+		(size 34.925 40.64)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "640b6c91-de7b-4c79-88c6-1ebacdec8c6f")
+		(property "Sheetname" "QSPI & JTAG"
+			(at 59.69 39.2934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "qspi.kicad_sch"
+			(at 59.69 81.2296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CarrierBoard-Rev1"
+				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 40.005)
+		(size 34.925 41.275)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8259e1ca-952e-4139-a0fb-5f94b1c9a244")
+		(property "Sheetname" "ULX3S"
+			(at 21.59 39.2934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ulx3s.kicad_sch"
+			(at 21.59 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CarrierBoard-Rev1"
+				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 40.005)
+		(size 33.02 40.005)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8f6b3c46-7b76-4ba3-a7b9-ae5856d2b16c")
+		(property "Sheetname" "OLEDs"
+			(at 96.52 39.2934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "oled.kicad_sch"
+			(at 96.52 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CarrierBoard-Rev1"
+				(path "/00ed34d1-f093-41ac-ab8d-6fe71740a8f6"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Parts")(type "KiCad")(uri "${KIPRJMOD}/lib/CarrierBoard.kicad_sym")(options "")(descr "CarrierBoard v1 schematic symbols"))
+  (lib (name "CarrierBoard")(type "KiCad")(uri "${KIPRJMOD}/CarrierBoard.kicad_sym")(options "")(descr ""))
+)
